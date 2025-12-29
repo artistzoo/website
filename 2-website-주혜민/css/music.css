@@ -1,0 +1,117 @@
+#music{
+  border: 1px solid #000;
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#music h2{
+  text-transform: uppercase;
+  font-size: 70px;
+  padding: 80px;
+}
+.title1,
+.title2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.title1 h3,
+.title2 h3{
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  padding: 10px 0;
+  animation: slide 0.35s linear;
+  position: absolute;
+}
+.title1 h3{
+  color: #fff;
+  background-color: #B30016;
+  position: relative;
+}
+.title2 h3{
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+.music-item{display: none;}
+.music-item.active{display: block;}
+.img1,
+.img2,
+.img3,
+.img4{
+  margin: 50px auto;
+  position: relative;
+}
+.img1{
+  width: 600px;
+  height: 600px;
+}
+.img2,
+.img3,
+.img4{
+  width: 600px;
+  height: 500px;
+}
+.img1:after,
+.img2:after,
+.img3:after,
+.img4:after{
+  content: 'Vaundy';
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-25deg);
+  opacity: 0.5;
+}
+.img2:after{content: 'CotonCandy';}
+.img3:after{content: 'Kroi';}
+.img4:after{content: 'go!go!vanillas';}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img{
+  width: inherit;
+  height: inherit;
+}
+.music-inner{
+  text-align: center;
+  margin: 50px auto;
+}
+.inner-1{margin-bottom: 50px;}
+.inner-1 h4,
+.inner-2 h4{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.inner-2{margin-bottom: 100px;}
+.inner-1 p,
+.inner-2 p{
+  font-family: 'Noto Sans KR', sans-serif; 
+  width: 1400px;
+  font-size: 16px;
+  padding: 50px 100px;
+  margin: auto;
+}
+.inner-1 p{background-color: #fff;}
+.inner-2 p{border: 2px solid #fff;}
+
+.ban_btn .fa-solid{
+  font-size: 40px;
+  color: #fff;
+}
+.ban_btn .ban_left,
+.ban_btn .ban_right{
+  position: absolute;
+  top: 80%;
+}
+.ban_btn .ban_left{left: 20%;}
+.ban_btn .ban_right{right: 20%;}
+.ban_btn .fa-solid:hover{color: #000;}

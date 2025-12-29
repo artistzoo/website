@@ -1,0 +1,114 @@
+#comics{
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#comics h2{
+  text-transform: uppercase;
+  font-size: 70px;
+  padding: 80px;
+}
+.comics-inner{
+  display: flex;
+  margin: auto;
+  position: relative;
+  width: 1400px;
+  height: 2000px;
+}
+.comics-inner .inner0-1,
+.comics-inner .inner2-1,
+.comics-inner .inner3-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.comics-inner .inner0-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 580px;
+}
+.comics-inner .inner2-1{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 1400px;
+  height: 580px;
+}
+.comics-inner .inner3-1{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 700px;
+  height: 580px;
+}
+.img0-1,
+.img1-1,
+.img2-1{
+  width: 330px;
+  height: 580px;
+  display: flex;
+}
+
+.comics-img,
+.comics-img1-1,
+.comics-img2-1{
+  width: 330px;
+  height: 530px;
+  overflow: hidden;
+  background-color: #000;
+}
+.comics-inner .inner0-1 .comics-img img,
+.comics-inner .inner2-1 .comics-img1-1 img,
+.comics-inner .inner3-1 .comics-img2-1 img{
+  width: 330px;
+  height: 530px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+  opacity: 0.5;
+}
+
+.inner0-1 .comics-txt,
+.inner2-1 .comics-txt1,
+.inner3-1 .comics-txt2{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  height: 35px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+  z-index: 0;
+}
+.inner0-1 .comics-txt:before,
+.inner2-1 .comics-txt1:before,
+.inner3-1 .comics-txt2:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #B30017;
+  transition: left 0.1s ease;
+  z-index: -1;
+}
+/* hover적용 */
+.inner0-1 .comics-img img:hover,
+.inner2-1 .comics-img1-1 img:hover,
+.inner3-1 .comics-img2-1 img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.inner0-1 .comics-img:hover .comics-txt:before,
+.inner2-1 .comics-img1-1:hover .comics-txt1:before, 
+.inner3-1 .comics-img2-1:hover .comics-txt2:before{
+  animation: sweep 0.4s linear forwards;
+}

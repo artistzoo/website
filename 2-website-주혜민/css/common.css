@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "GiantsInline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Giants';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+body{
+  font-family: "GiantsInline";
+}
+/* goto-top-----------------*/
+html{ scroll-behavior:smooth; }
+
+.to-top2{
+  position:fixed;
+  right:40px;
+  bottom:100px;
+  width:100px;
+  height:100px;
+  z-index:10002;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s;
+  background:center/60px no-repeat url("../image/goto.png");
+}
+.to-top2.show{opacity:1; pointer-events:auto;}
+
+.to-top2::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  color: #fff;
+  background:center/contain no-repeat url("../image/go-to-top-ring.svg");
+  animation:spin 10s linear infinite;
+}
+@keyframes spin{ to{ transform:rotate(360deg); } }
+
+
+header{
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 5px rgba(253,214,0,0.2);
+  background-color: #000;
+  position: relative;
+}
+nav{
+  width: 1000px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 img{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  margin-left: 50px;
+}
+ul.gnb{
+  display: flex;
+}
+.gnb>.main{position: relative;}
+.gnb>.main>a{
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+	font-weight: 400;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.gnb>.main:hover>a{color: #BD0C15}
+
+.sub{
+  display: none;
+  position: absolute;
+  z-index: 10001;
+  width: 100%;
+  height: 80px;
+  top: 100%;
+  left: 0;
+}
+.sub li{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub li a{
+  font-family: 'Noto Sans KR', sans-serif;
+	color: #fff;
+	font-size: 15px;
+  text-transform: uppercase;
+}
+.sub li a:hover {color: #fdd600;}
+
+.gnb-sub{ 
+  display:none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+	width:100%;
+	height:80px; 
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10000;
+}

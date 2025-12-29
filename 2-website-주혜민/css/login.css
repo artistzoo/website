@@ -1,0 +1,97 @@
+
+
+#login{
+  height: 2696px;
+  background-image: url(../image/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  font-family: 'Noto Sans KR', sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form{
+  width: 400px;
+  margin-top: -60%;
+}
+
+.login-form h2{
+  font-weight: 600;
+  font-size: 25px;
+  color: #FCDC38;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login{
+  position: relative;
+  margin: 15px 0;
+}
+.login input{
+  display: block;
+  width: 100%;
+  border: 1px solid #FCDC38;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #FCDC38;
+  background-color: transparent;
+}
+input::placeholder{
+  color: #FCDC38;
+  font-size: 15px;
+}
+.login:is(input[type=text],input[type=password]):focus::placeholder{
+  opacity: 0;
+}
+input, button{
+  border: none;
+  outline: none;
+}
+.btn-box{
+  display: block;
+  width: 100%;
+  padding: 15px;
+	cursor: pointer;
+  background-color: #FCDC38;
+	color: #000;
+  text-transform: capitalize;
+  transition: 0.35s;
+  font-size: 20px;
+  font-weight: 500;
+}
+.login-form p{
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+}
+.login-form .sns p:before,
+.login-form .sns p:after{
+  content: '';
+  position: absolute;
+  top: 14px;
+  width: 35%;
+  height: 1px;
+  background-color: #fff;
+}
+.login-form .sns p:before{left: -8%;}
+.login-form .sns p:after{right: -8%;}
+
+.icons{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 30px 0;
+}
+.login-form .join>p{
+  padding-top: 50px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+}

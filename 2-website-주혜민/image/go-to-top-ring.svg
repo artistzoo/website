@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="-60 -60 120 120">
+  <!-- GO TO TOP text ring (larger font) -->
+  <defs>
+    <!-- Circular path (radius = 45) -->
+    <path id="ringPath" d="M 0,0 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+  </defs>
+
+  <!-- Optional faint guide ring (remove if not needed) -->
+  <circle r="49" fill="none" stroke="#000" stroke-width="1.8" opacity="0.06"/>
+
+  <!-- Text around the circle -->
+  <text fill="#000"
+        font-family="Inter, 'Noto Sans KR', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="800" letter-spacing="2.2">
+    <textPath href="#ringPath" startOffset="0">
+      • GOTO TOP • GOTO TOP • GOTO TOP
+    </textPath>
+  </text>
+</svg>

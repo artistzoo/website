@@ -1,0 +1,94 @@
+#introduction{
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#introduction h2{
+  text-transform: uppercase;
+  font-size: 70px;
+  padding: 80px;
+}
+.introduction-inner{
+  margin: auto;
+  width: 1920px;
+  height: 2300px;
+}
+.introduction-img{position: relative;}
+.introduction-img .top-img{
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
+.introduction-img .top-img img{
+  width: 1200px;
+  height: 670px;
+}
+.introduction-inner .middle-img{
+  position: absolute;
+  top: 850px;
+  right: -10px;
+}
+.introduction-inner .middle-img img{
+  width: 1000px;
+  height: 540px;
+}
+.introduction-inner .bottom-img{
+  position: absolute;
+  top: 1500px;
+  left: -300px;
+}
+.introduction-inner .bottom-img img{
+  width: 1200px;
+  height: 350px;
+}
+.introduction-inner .top-txt{
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  text-align: left;
+  font-size: 40px;
+}
+.introduction-inner .top-txt span{color: #B30017;}
+.introduction-inner .top-txt p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.left-btn,
+.right-btn{
+  width: 320px;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 10%;
+  background-color: #B30017;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 0;
+}
+.left-btn{left: 32%;}
+.right-btn{left: 52%;}
+
+.left-btn:before,
+.right-btn:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: left 0.1s ease;
+  z-index: -1;
+}
+
+/* hover효과 */
+.left-btn:hover:before,
+.right-btn:hover:before{
+  animation: sweep 0.3s linear forwards;
+}

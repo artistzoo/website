@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>SAKAMOTO DAYS</title>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- goto top -->
+  <a class="to-top2" href="#top" aria-label="go to top"></a>
+
+  <header>
+      <nav>
+        <h1><a href="#"><img src="image/main-logo.png" alt="메인로고"></a></h1>
+        <ul class="gnb">
+          <li class="main"><a href="index.html">home</a></li>
+          <li class="main"><a href="introduction.html">introduction</a>
+            <ul class="sub">
+              <li><a href="story.html">story</a></li>
+              <li><a href="character.html">character</a></li>
+            </ul>
+          </li>
+          <li class="main"><a href="comics.html">comics</a>
+          </li>
+          <li class="main"><a href="music.html">music</a>
+          </li>
+          <li class="main"><a href="goods.html">goods</a>
+          </li>
+          <li class="main"><a href="staffcast.html">staff&amp;cast</a></li>
+          <li class="main"><a href="login.html">login</a>
+            <ul class="sub last">
+              <li><a href="join.html">join</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="gnb-sub"></div> 
+  </header>
+  <div id="join">
+    <div class="join-form">
+      <h2>회원가입</h2>
+      <div class="top">
+        <a href="#none">1.약관동의 및 본인인증</a>
+        <a href="#none">2.회원정보 입력</a>
+        <a href="#none">3.가입완료</a>
+      </div>
+      <form>
+        <div class="items">
+          <div class="item">
+            <b>아이디</b>
+            <input type="text" name="id" placeholder="아이디를 입력해주세요" required>
+          </div>
+          <div class="item">
+            <b>비밀번호</b>
+            <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" required>
+          </div>
+          <div class="txt">
+            <p>*8-16자 사이의 영문대소문자/숫자/특수문자를 혼합하여 입력해주세요.</p>
+          </div>
+          <div class="item">
+            <b>비밀번호 확인</b>
+            <input type="password" name="pw" placeholder="비밀번호를 한번 더 입력해주세요" required>
+          </div>
+          <div class="txt">
+            <p>*동일한 비밀번호를 한번 더 입력해주세요.</p>
+          </div>
+          <div class="item">
+            <b>이름</b>
+            <input type="text" name="name" placeholder="이름을 입력해주세요" required>
+          </div>
+          <div class="item">
+            <b>이메일</b>
+            <input type="email" name="email" placeholder="예) uiux2025@naver.com" required>
+          </div>
+          <div class="info">
+            <p>*이메일을 통한 상품 및 이벤트(할인,혜택 등)정보수신</p>
+            <label>
+              <input type="radio" value="yes" name="agree" checked="">
+              <em></em>
+              <span>Yes</span>
+            </label>
+            <label>
+              <input type="radio" value="no" name="agree" checked="">
+              <em></em>
+              <span>No</span>
+            </label>
+          </div>
+          <div class="item">
+            <b>휴대폰</b>
+            <input type="text" name="phone" placeholder="-제외 숫자만 입력해주세요" required>
+          </div>
+          <div class="agree">
+            <label>
+              <input type="checkbox" name="agree">
+              <em></em>
+              <b><span>이용약관</span> 및 <span>개인정보 보호정책</span> 모두 동의합니다.</b>
+            </label>
+          </div>
+          <div class="btn"> 
+            <button type="reset">취소하기</button>
+            <button type="submit">가입하기</button>
+          </div>
+  
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <img src="image/ft-img.png" alt="footerimg">
+        </div>
+          <p>&copy;Yuto Suzuki / SHUEISHA, SAKAMOTO DAYS PROJECT</p>
+        <div class="footer-right">
+          <a href="https://x.com/sakamotodays_pr" target="_blank"><img src="image/footer-icon1.png" alt="fticon1"></a>
+          <a href="https://www.facebook.com/share.php?u=https://sakamotodays.jp" target="_blank"><img src="image/footer-icon2.png" alt="fticon2"></a>
+          <a href="https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv21%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1446101138%26state%3Dfa8cc58cf58db8f0e7d7d3a91f89fe%26reirect_uri%3Dhttps%253A%252F%252Fsocial-plugins.lineme%252Flineit%252FloginCallback%253FreturnUrl%253Dhttps%25253A%25252F%25252Fsocial-plugins.lineme%25252Flineit%25252Fshare%25253Furl%25253Dhttps%25253A%25252F%25252Fsakamotodaysjp%25252F%252526text%25253DTV%252525E3%25252582%252525A2%252525E3%25252583%2525258B%252525E3%25252583%252525A1%2525253%25252580%2525258ESAKAMOTO%25252520DAYS%252525E3%25252580%2525258F2025%252525E5%252525B9%252525B41%252525E6%2525259C2525258811%252525E6%25252597%252525A5%2528%252525E5%2525259C%2525259F%2529%252525E3%25252582%25252588%252525E3%2525252%2525258A%252525E3%25252583%25252586%252525E3%25252583%252525AC%252525E6%2525259D%252525B1%252525E3%25252581%252525B%252525E3%25252581%2525258B%252525E3%25252581%252525AB%252525E3%25252581%252525A6%252525E6%252525AF%2525258E%252525E925252580%252525B1%252525E5%2525259C%2525259F%252525E6%2525259B%2525259C23%252525E6%25252599%25252582%252525E3%2525258%2525258B%252525E3%25252582%25252589%252525E6%25252594%252525BE%252525E9%25252580%25252581%252525E9%25252596%2525258B252525E5%252525A7%2525258B%252525EF%252525BC%25252581%252525E3%25252581%25252595%252525E3%25252582%25252589%252525E3%5252581%252525AB%252525E3%25252580%252525811%252525E6%2525259C%25252588%252525EF%252525BC%25252594%252525E6%25252597%52525A5%2528%252525E5%2525259C%2525259F%2529%252525E3%25252581%252525AB%252525E3%25252581%252525AF%252525E3%25252580%5252581%252525E6%25252594%252525BE%252525E9%25252580%25252581%252525E7%2525259B%252525B4%252525E5%25252589%2525258D%22525E7%25252589%252525B9%252525E7%25252595%252525AA%252525E3%25252582%25252592%252525E6%25252594%252525BE%252525E9%2552580%25252581%252525EF%252525BC%25252581Netflix%25252520%252525E3%25252581%252525BB%252525E3%25252581%2525258B%25252E5%25252590%25252584%252525E9%25252585%2525258D%252525E4%252525BF%252525A1%252525E3%25252583%25252597%252525E3%2525253%252525A9%252525E3%25252583%25252583%252525E3%25252583%25252588%252525E3%25252583%25252595%252525E3%25252582%252525A%252525E3%25252583%252525BC%252525E3%25252583%252525A0%252525E3%25252581%252525AB%252525E3%25252581%252525A6%252525E925252585%2525258D%252525E4%252525BF%252525A1%252525E4%252525BA%25252588%252525E5%252525AE%2525259A%25252520https%2525A%25252F%25252Fsakamotodaysjp%252526from%25253Dline_scheme%26scope%3Dopenid%2520profile%2520friends%2520groups%2520timeline.post%2520messagewrite&loginChannelId=1446101138&loginState=GtB39HhYxtpwE3Zc0wV9s6#/" target="_blank"><img src="image/footer-icon3.png" alt="fticon3"></a>
+        </div>
+      </div>
+  </footer>
+  <!-- goto top -->
+  <script>
+    const btn2 = document.querySelector('.to-top2');
+    window.addEventListener('scroll', () => {
+      btn2.classList.toggle('show', window.scrollY > 300);
+    }, { passive:true });
+  </script>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/join.js"></script>
+</body>
+</html>

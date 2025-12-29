@@ -1,0 +1,119 @@
+#join{
+  height: 2696px;
+  background-image: url(../image/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  font-family: 'Noto Sans KR', sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FCDC38;
+}
+.join-form{margin-top: -40%;}
+.join-form h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.top{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.top a{
+  flex: 1;
+  padding: 25px 20px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #FCDC38;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.top a:nth-child(2){
+  background-color: #FCDC38;
+  color: #000;
+  margin: 0 30px;
+}
+form b:after {
+  content: '*';
+  position: absolute;
+  color:#B30016;
+  font-size: 18px;
+}
+form .items>div{
+  display: flex;
+  align-items: center;
+  margin: 20px 200px;
+}
+.items{margin-top: 50px;}
+.item b{width: 110px;}
+.item input{
+  display: block;
+  width: 400px;
+  border: 1px solid #FCDC38;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #FCDC38;
+  background-color: transparent;
+}
+input::placeholder{
+  color: #fff;
+  font-size: 15px;
+}
+input, button{
+  border: none;
+  outline: none;
+}
+.txt p{
+  font-size: 13px;
+  padding: 0 0 0 110px;
+  margin-top: -3%;
+}
+.info label{
+  margin-top: -3%;
+  padding: 0 5px;
+}
+
+.info p{
+  font-size: 13px;
+  padding: 0 10px 0 110px;
+  margin-top: -3%;
+}
+.agree label{
+  display: flex;
+  padding: 50px 0 0 110px;
+}
+.agree b{
+  font-size: 17px;
+  padding: 0 0 0 10px;
+  color: #fff;
+}
+.agree span{
+  display: inline-block;
+  color: #FCDC38;
+}
+.btn button{
+  width: 120px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  background-color: #FCDC38;
+  cursor: pointer;
+}
+.btn button:nth-child(1){
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #FCDC38;
+  color: #fff;
+  margin-left: 170px;
+}
+.btn button:nth-child(2){border: 1px solid #FCDC38;}
+
+
